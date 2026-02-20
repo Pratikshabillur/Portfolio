@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg-primary: #0a0a0a;
+  --bg-secondary: #111111;
+  --text-primary: #ffffff;
+  --text-secondary: #d1d5db;
+  --accent: #6366f1;
+}
+
+[data-theme="light"] {
+  --bg-primary: #ffffff;
+  --bg-secondary: #f3f4f6;
+  --text-primary: #111827;
+  --text-secondary: #4b5563;
+  --accent: #4f46e5;
+}
+
+body {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Reuse your existing hero-bg, but make it theme-aware if needed */
+.hero-bg {
+  background: linear-gradient(135deg, #1e1b4b 0%, #312e81 100%);
+}
+
+/* Optional: adjust some sections for light mode contrast */
+[data-theme="light"] .bg-zinc-900\/30,
+[data-theme="light"] .bg-zinc-800\/50,
+[data-theme="light"] .bg-zinc-950\/80 {
+  background-color: rgba(243, 244, 246, 0.6) !important;
+  border-color: #d1d5db !important;
+}
