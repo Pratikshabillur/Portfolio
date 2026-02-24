@@ -21,7 +21,7 @@ const projects = [
     title: "AI Image & Video Enhancement Tool (Hack2Future 2024)",
     tech: ["Real-ESRGAN", "FILM"],
     desc: "Implemented super-resolution for images/videos using Real-ESRGAN and FILM frame interpolation. Created optimized batch-processing pipeline. Top 40 Finalist.",
-    github: "https://github.com/Pratikshabillur/AI_Job_Screening-.git", // Note: seems mismatched name – update if wrong repo
+    github: "", // Note: seems mismatched name – update if wrong repo
     live: null,
   },
   {
